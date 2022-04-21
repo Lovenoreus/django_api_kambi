@@ -29,6 +29,8 @@ def list_files(request):
     if sys.argv[1] == "handle_signal":
         signal.signal(signal.SIGTERM, sigterm_handler)
 
+    
+
     path = '/Users/lovenoreus/desktop/program/kambi_django_api/executable_files'
     onlyfiles = [f for f in listdir(path) if isfile(join(path, f) )]
     file_dictionary = {}
